@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyun Yükleme Sitesi</title>
+    <style>
+        /* Genel stil */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Header kısmı */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        /* Ana içerik alanı */
+        .content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+
+        /* Oyun listesi düzeni */
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .game-item {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .game-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .game-item h3 {
+            font-size: 22px;
+            margin: 15px 10px;
+            color: #333;
+        }
+
+        .game-item p {
+            font-size: 16px;
+            color: #777;
+            margin: 0 10px 20px;
+        }
+
+        .game-item a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .game-item a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer kısmı */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 768px) {
+            .game-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .game-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Oyun Yükleme Sitesi</h1>
+    </header>
+
+    <div class="content">
+        <h2>Popüler Oyunlar</h2>
+        
+        <div class="game-list">
+            <!-- Pou Oyunu -->
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pou_icon.png" alt="Pou Oyunu">
+                <h3>Pou Oyunu</h3>
+                <p>Pou'nun eğlenceli dünyasında saatlerce eğlenebilirsiniz!</p>
+                <a href="https://pou.tr.uptodown.com/android/download" target="_blank">Yükle</a>
+            </div>
+
+            <!-- Diğer Oyunlar -->
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pou_icon.png" alt="Super Fun Game">
+                <h3>Super Fun Game</h3>
+                <p>Harika bir aksiyon oyunu!</p>
+                <a href="https://www.example.com/game1" target="_blank">Yükle</a>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pou_icon.png" alt="Puzzle Master">
+                <h3>Puzzle Master</h3>
+                <p>Farklı seviyelerde bulmaca çöz!</p>
+                <a href="https://www.example.com/game2" target="_blank">Yükle</a>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pou_icon.png" alt="Racing Fury">
+                <h3>Racing Fury</h3>
+                <p>Heyecanlı araba yarışları seni bekliyor!</p>
+                <a href="https://www.example.com/game3" target="_blank">Yükle</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Oyun Yükleme Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
